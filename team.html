@@ -1,0 +1,122 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/1102993022951624736/1104717550278955028/cooltext435018081935935.png" type="image/x-icon">
+  <title>Unser Team</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    
+    /* Zentrieren */
+    
+    .Zentriert {
+      text-align: center;
+    }
+    
+    /* CSS-Styling für die feste Navigationsleiste */
+    .fixed-navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      padding: 10px;
+      z-index: 9999; /* sorgt dafür, dass die Leiste über anderen Inhalten liegt */
+      font-family: "Open Sans", sans-serif; /* Google Font "Open Sans" einbinden */
+    }
+
+    /* Stil für den restlichen Inhalt der Webseite */
+    .content {
+      margin-top: 70px; /* Geändert auf 70px, um Platz für die feste Navigationsleiste zu lassen */
+      padding: 20px;
+      font-family: "Open Sans", sans-serif; /* Schriftart auch für den restlichen Inhalt anwenden */
+    }
+
+    /* Stil für die Listenelemente in der Navigationsleiste */
+    .fixed-navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .fixed-navbar li {
+      display: inline;
+      position: relative;
+    }
+
+    .fixed-navbar a,
+    .fixed-navbar span {
+      display: inline-block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .fixed-navbar a:hover {
+      background-color: #ddd;
+    }
+
+    /* Stil für den Dropdown-Inhalt */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      padding: 10px;
+      top: 100%; /* Verändert, um den Dropdown-Inhalt unter dem Menü anzuzeigen */
+      left: 0;
+      z-index: 999;
+    }
+
+    /* Zeige den Dropdown-Inhalt, wenn der Link oder der Dropdown-Inhalt selbst mit der Maus überfahren wird */
+    .fixed-navbar li:hover .dropdown-content,
+    .dropdown-content:hover {
+      display: block;
+    }
+
+    /* Aktiviere das Dropdown-Menü beim Hovern über den Bereich zwischen "Informationen" und dem Dropdown-Inhalt */
+    .fixed-navbar li:hover .dropdown-trigger {
+      display: block;
+    }
+
+    /* Stil für den Bereich zwischen "Informationen" und dem Dropdown-Inhalt */
+    .dropdown-trigger {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 0;
+      width: 100%;
+      height: 10px; /* Höhe des Bereichs anpassen */
+      display: none;
+      background-color: transparent;
+  </style>
+</head>
+
+    <!-- Body -->  
+
+  <body>
+  <div class="fixed-navbar">
+    
+    <!-- Navigationsleiste -->
+    
+    <ul>
+      <li><a href="https://dreamtopolis.github.io/home/">Home</a></li>
+      <li>
+        <span>Informationen</span>
+        <div class="dropdown-trigger"></div>
+        <div class="dropdown-content">
+          <a href="https://dreamtopolis.github.io/server/">Server</a>
+          <a href="https://dreamtopolis.github.io/rules/">Regeln</a>
+          <a href="https://dreamtopolis.github.io/team/">Unser Team</a>
+        </div>
+      </li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    
+    <!-- Website -->
+    
+    <h1 class="Zentriert">Diese Seite ist momentan in Bearbeitung!</h1>
+  </div>
+</body>
+</html>
