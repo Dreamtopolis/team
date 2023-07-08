@@ -66,6 +66,7 @@
       top: 100%; /* Verändert, um den Dropdown-Inhalt unter dem Menü anzuzeigen */
       left: 0;
       z-index: 999;
+      text-align: center;
     }
 
     /* Zeige den Dropdown-Inhalt, wenn der Link oder der Dropdown-Inhalt selbst mit der Maus überfahren wird */
@@ -88,6 +89,13 @@
       height: 10px; /* Höhe des Bereichs anpassen */
       display: none;
       background-color: transparent;
+    }
+
+    /* Stil für den aktiven Serverlink */
+    .dropdown-content span.active,
+    .fixed-navbar li span.active {
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -107,7 +115,7 @@
         <div class="dropdown-content">
           <a href="https://dreamtopolis.github.io/server/">Server</a>
           <a href="https://dreamtopolis.github.io/rules/">Regeln</a>
-          <a href="https://dreamtopolis.github.io/team/">Unser Team</a>
+          <apan class="active">Unser Team</span>
         </div>
       </li>
       <li><a href="https://www.phantasiacraft.com/park">Park</a></li>
